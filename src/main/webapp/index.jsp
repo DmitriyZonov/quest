@@ -33,7 +33,7 @@
     </div>
 
     <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
-        <h2 class="display-3" style="text-align: center; text-decoration-style: double;"><b>Введи своё имя, Воин!</b></h2>
+        <h2 class="display-3" style="text-align: center; text-decoration-style: double;"><b>Земля твоих предков в опасности!</b></h2>
         <p class="lead"><b><b>Тебя ждет большое приключение, пройдя которое ты не останешься прежним, ты столкнёшься, возможно, с самым трудным испытанием в твоей жизни, вводи имя, если готов</b></b></p>
         <h3 href="#" id="login-button">Назвать себя</h3>
     </div>
@@ -45,7 +45,13 @@
         </span>
         <form>
             <input type="email" name="name" placeholder="Твоё имя, воин">
-            <input type="password" name="race" placeholder="Назови свою расу">
+                    <select id="select" name="selectbasic" class="form-control" form="container">
+                        <option disabled selected>Выбери свою расу</option>
+                        <option value="elf">Эльф</option>
+                        <option value="dwarf">Гном</option>
+                        <option value="wizard">Чародей</option>
+                        <option value="warrior">Воин</option>
+                    </select>
             <a href="#">Назвать себя</a>
         </form>
     </div>

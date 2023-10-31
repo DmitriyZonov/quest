@@ -46,6 +46,24 @@ img{
     box-shadow: 1px 1px 50px #000;
     display: none;
 }
+#select{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 9px auto;
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgb(3,3,3);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out
+}
 
 .close-btn{
     position: absolute;
@@ -94,7 +112,7 @@ input{
     padding: 8px;
     border-radius: 6px;
     border: none;
-    background: rgba(3,3,3,.1);
+    background: rgb(3,3,3);
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -o-transition: all 2s ease-in-out;
