@@ -1,7 +1,9 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@page import="com.javarush.quest.zonov.constants.UserAnswersConstants" %>
 <!DOCTYPE html>
 <head>
+
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
@@ -13,7 +15,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Quest of Heroes - Main</title>
+    <title>Quest Of Heroes - Main</title>
     <!-- Bootstrap CSS (jsDelivr CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
@@ -43,16 +45,16 @@
         <span class="close-btn">
             <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
         </span>
-        <form>
-            <input type="email" name="name" placeholder="Твоё имя, воин">
-                    <select id="select" name="selectbasic" class="form-control" form="container">
-                        <option disabled selected>Выбери свою расу</option>
-                        <option value="elf">Эльф</option>
-                        <option value="dwarf">Гном</option>
-                        <option value="wizard">Чародей</option>
-                        <option value="warrior">Воин</option>
-                    </select>
-            <a href="#">Назвать себя</a>
+        <form action="tavern" method="get">
+            <input type="text" name="userName" placeholder="Твоё имя, воин" />
+            <select type="text" id="select" name="userRace">
+                <option disabled selected>Выбери свою расу</option>
+                <option value="elf">Эльф</option>
+                <option value="dwarf">Гном</option>
+                <option value="wizard">Чародей</option>
+                <option value="warrior">Воин</option>
+            </select>
+            <input type="submit" value="Назвать себя" style="cursor: pointer" />
         </form>
     </div>
 
