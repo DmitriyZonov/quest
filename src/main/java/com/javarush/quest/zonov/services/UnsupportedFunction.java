@@ -8,6 +8,9 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
-public interface Function {
-    public void execute(HttpServletRequest request, HttpServletResponse response, HttpSession session, AnswerCode answerCode) throws ServletException, IOException;
+public class UnsupportedFunction implements Function {
+    @Override
+    public void execute(HttpServletRequest request, HttpServletResponse response, HttpSession session, AnswerCode answerCode) throws ServletException, IOException {
+
+    }
 }

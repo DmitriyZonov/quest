@@ -1,7 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page import="com.javarush.quest.zonov.constants.UserAnswersConstants" %>
-<%@ page import="com.javarush.quest.zonov.entity.Race" %>
+<%@ page import="com.javarush.quest.zonov.repository.Race" %>
 <%@ page import="com.javarush.quest.zonov.util.UserRaceInGenitiveCase" %>
+<%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
+<%@ page import="static com.javarush.quest.zonov.constants.NpcPhrasesConstants.*" %>
+<%@ page import="static com.javarush.quest.zonov.constants.UserAnswersConstants.*" %>
 
 <!DOCTYPE html>
 <head>
@@ -40,76 +43,74 @@
         String userRace = race.getNameOfRace();
         String userRaceInGenitiveCase = new UserRaceInGenitiveCase(race).toGenitive();
     %>
-    <c:set var="TAVERN_GOOD_ANSWER" value="<%=UserAnswersConstants.I_STARVING_FOR_ADVENTURES%>"/>
+    <c:set var="TAVERN_GOOD_ANSWER" value="<%=I_STARVING_FOR_ADVENTURES%>"/>
     <c:set var="GO_TO_THE_QUEST" value="<%=UserAnswersConstants.GIVE_YOUR_WORK%>"/>
     <c:set var="SESSION_ANSWER" value="<%=sessionAnswer%>" />
 
 <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
-    <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>Приветствую тебя, <%=userRace%>!</b></b></h2>
-    <h2 class="lead"><b><b>Не часто встретишь вас в наших краях, что привело тебя сюда?</b></b></h2>
+    <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=GREETINGS + userRace%>!</b></b></h2>
+    <h2 class="lead"><b><b><%=WHAT_ARE_YOU_DOING_HERE%></b></b></h2>
     <c:if test="${SESSION_ANSWER == null}">
-    <h3 style="text-align: center" href="#" id="answer-button">Ответить трактирщику</h3>
+    <h3 style="text-align: center" href="#" id="answer-button"><%=ANSWER_TO_INNKEAPER%></h3>
     </c:if>
 </div>
     <br><br>
     <div id="answer">
-        <h1>Твой ответ</h1>
+        <h1><%=YOUR_ANSWER%></h1>
         <span class="close-btn">
             <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
         </span>
-        <form action="tavernAnswer" method="get">
-            <input onclick="window.location='/tavernAnswer?answer=0'" value="Не твоё дело, пёс!" style="cursor:pointer; text-align: center" />
-            <input onclick="window.location='/tavernAnswer?answer=1'; closeAfterAnswer()" value="Меня всегда тянула жажда приключений..." style="cursor:pointer; text-align: center" />
+        <form action="logic" method="get">
+            <input onclick="window.location='/logic?location=tavern&answer=0'" value="<%=NOT_YOUR_BUSINESS%>" style="cursor:pointer; text-align: center" />
+            <input onclick="window.location='/logic?location=tavern&answer=1'; closeAfterAnswer()" value="<%=I_STARVING_FOR_ADVENTURES%>" style="cursor:pointer; text-align: center" />
         </form>
     </div>
 
-    <c:if test="${TAVERN_GOOD_ANSWER == SESSION_ANSWER}">
+    <c:if test="${SESSION_ANSWER == TAVERN_GOOD_ANSWER}">
         <div class="jumbotron" style="background-color: rgba(10,145,9,0.5); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
             <br>
-            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${TAVERN_GOOD_ANSWER}!</b></b></h2>
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${TAVERN_GOOD_ANSWER}</b></b></h2>
             <br>
         </div>
         <br><br>
         <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
-            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>Это хорошо!</b></b></h2>
-            <h2 class="lead"><b><b>Как раз есть одна работёнка для отчаянного <%=userRaceInGenitiveCase%></b></b></h2>
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=THATS_GOOD%></b></b></h2>
+            <h2 class="lead"><b><b><%=I_HAVE_A_JOB + userRaceInGenitiveCase%></b></b></h2>
         </div>
         <br><br>
-            <div id="goToQuest">
-                <h1>Ответь на призыв</h1>
-                <form action="tavernAnswer" method="get">
-                    <input onclick="window.location='/tavernAnswer?answer=2'" value="Давай свою работенку" style="cursor:pointer; text-align: center" />
-                    <input onclick="window.location='/tavernAnswer?answer=3'; closeAfterAnswer()" value="Приключениям я рад, но ты мне не нравишься..." style="cursor:pointer; text-align: center" />
-                </form>
-            </div>
+        <h1><%=ANSWER_ON_CALL%></h1>
+        <form action="logic" method="get">
+            <input onclick="window.location='/logic?location=tavern&answer=2'" value="<%=GIVE_YOUR_WORK%>" style="cursor:pointer; text-align: center" />
+            <input onclick="window.location='/logic?location=tavern&answer=3'; closeAfterAnswer()" value="<%=I_DONT_LIKE_YOU%>" style="cursor:pointer; text-align: center" />
+        </form>
     </c:if>
 
     <c:if test="${GO_TO_THE_QUEST == SESSION_ANSWER}">
         <div class="jumbotron" style="background-color: rgba(10,145,9,0.5); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
             <br>
-            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${TAVERN_GOOD_ANSWER}!</b></b></h2>
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${TAVERN_GOOD_ANSWER}</b></b></h2>
             <br>
         </div>
         <br><br>
         <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
-            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>Это хорошо!</b></b></h2>
-            <h2 class="lead"><b><b>Как раз есть одна работёнка для отчаянного <%=userRaceInGenitiveCase%></b></b></h2>
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=THATS_GOOD%></b></b></h2>
+            <h2 class="lead"><b><b><%=I_HAVE_A_JOB + userRaceInGenitiveCase%></b></b></h2>
         </div>
         <br><br>
         <div class="jumbotron" style="background-color: rgba(10,145,9,0.5); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
             <br>
-            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${GO_TO_THE_QUEST}!</b></b></h2>
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b>${GO_TO_THE_QUEST}</b></b></h2>
             <br>
         </div>
         <br><br>
         <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
             <br>
-            <h2 class="lead"><b><b>Раз готов, пойдём выйдем, здесь слишком много посторонних глаз и ушей</b></b></h2>
+            <h2 class="lead"><b><b><%=GO_IF_YOU_READY%></b></b></h2>
             <br>
         </div>
         <br><br>
-        <form action="tavernAnswer" method="get">
-            <input onclick="window.location='/tavernAnswer?answer=4'" style="font-size: 30px; text-align: center; cursor: pointer" id="goOut-button" value="Пойти за трактирщиком" />
+        <form action="logic" method="get">
+            <input onclick="window.location='/logic?location=tavern&answer=4'" style="font-size: 30px; text-align: center; cursor: pointer" value="<%=GO_FOR_INNKEAPER%>" />
         </form>
     </c:if>
 

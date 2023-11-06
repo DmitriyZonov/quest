@@ -1,6 +1,6 @@
 package com.javarush.quest.zonov.util;
 
-import com.javarush.quest.zonov.entity.Race;
+import com.javarush.quest.zonov.repository.Race;
 
 public class UserRaceInGenitiveCase {
     private final Race race;

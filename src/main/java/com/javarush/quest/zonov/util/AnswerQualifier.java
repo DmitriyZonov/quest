@@ -3,11 +3,11 @@ package com.javarush.quest.zonov.util;
 import com.javarush.quest.zonov.repository.AnswerCode;
 import jakarta.servlet.http.HttpServletRequest;
 
-public class TavernAnswerQualifier {
+public class AnswerQualifier {
 
     private int answerCode;
 
-    public TavernAnswerQualifier(HttpServletRequest request){
+    public AnswerQualifier(HttpServletRequest request){
 
             String answer = request.getParameter("answer");
             boolean isNumeric = answer.chars().allMatch(Character::isDigit);

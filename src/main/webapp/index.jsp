@@ -1,6 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@page import="com.javarush.quest.zonov.constants.UserAnswersConstants" %>
+<%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
+<%@ page import="static com.javarush.quest.zonov.constants.NpcPhrasesConstants.*" %>
+<%@ page import="com.javarush.quest.zonov.constants.RaceConstants" %>
 <!DOCTYPE html>
 <head>
 
@@ -31,30 +33,30 @@
 <div class="container">
 
     <div class="header clearfix">
-        <h1 class="text-muted" style="line-height: 62px; font-weight: 800; text-align: center; letter-spacing: 3px;">Quest Of Heroes</h1>
+        <h1 class="text-muted" style="line-height: 62px; font-weight: 800; text-align: center; letter-spacing: 3px;"><%=QUEST_OF_HEROES%></h1>
     </div>
 
     <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
-        <h2 class="display-3" style="text-align: center; text-decoration-style: double;"><b>Земля твоих предков в опасности!</b></h2>
-        <p class="lead"><b><b>Тебя ждет большое приключение, пройдя которое ты не останешься прежним, ты столкнёшься, возможно, с самым трудным испытанием в твоей жизни, вводи имя, если готов</b></b></p>
-        <h3 href="#" id="login-button">Назвать себя</h3>
+        <h2 class="display-3" style="text-align: center; text-decoration-style: double;"><b><%=YOUR_NATIVE_LAND_IN_DANGER%></b></h2>
+        <p class="lead"><b><b><%=LOGIN_INVITATION%></b></b></p>
+        <h3 href="#" id="login-button"><%=SET_YOUR_NAME%></h3>
     </div>
 
     <div id="container">
-        <h1>Введи имя</h1>
+        <h1><%=TEXT_NAME%></h1>
         <span class="close-btn">
             <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
         </span>
         <form action="tavern" method="get">
-            <input type="text" name="userName" placeholder="Твоё имя, воин" />
+            <input type="text" name="userName" placeholder="<%=YOUR_NAME_WARRIOR%>" />
             <select type="text" id="select" name="userRace">
-                <option disabled selected>Выбери свою расу</option>
-                <option value="elf">Эльф</option>
-                <option value="dwarf">Гном</option>
-                <option value="wizard">Чародей</option>
-                <option value="warrior">Воин</option>
+                <option disabled selected><%=SET_YOUR_RACE%></option>
+                <option value="elf"><%=RaceConstants.ELF%></option>
+                <option value="dwarf"><%=RaceConstants.DWARF%></option>
+                <option value="wizard"><%=RaceConstants.WIZARD%></option>
+                <option value="warrior"><%=RaceConstants.WARRIOR%></option>
             </select>
-            <input type="submit" value="Назвать себя" style="cursor: pointer" />
+            <input type="submit" value="<%=SET_YOUR_NAME%>" style="cursor: pointer" />
         </form>
     </div>
 

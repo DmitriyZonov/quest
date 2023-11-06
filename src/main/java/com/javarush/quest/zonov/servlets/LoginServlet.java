@@ -1,6 +1,6 @@
 package com.javarush.quest.zonov.servlets;
 
-import com.javarush.quest.zonov.entity.Race;
+import com.javarush.quest.zonov.repository.Race;
 import com.javarush.quest.zonov.entity.User;
 import com.javarush.quest.zonov.util.StringToRaceConverter;
 import jakarta.servlet.ServletException;
@@ -20,7 +20,7 @@ public class LoginServlet extends HttpServlet {
         currentSession.setMaxInactiveInterval(-1);
 
         String name = (req.getParameter("userName"));
-        Race race = new StringToRaceConverter(req.getParameter("userRace")).convert();
+        Race race = new StringToRaceConverter(req).convert();
 
         User user = User.getInstance();
         user.setName(name);

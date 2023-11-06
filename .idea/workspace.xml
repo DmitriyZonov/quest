@@ -9,33 +9,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fffd75e-6d89-4fe0-83e6-146565d6ab14" name="Changes" comment="add login form, start working at tavern page">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/UserAnswersConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Answer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/AnswerCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/RestartServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToRaceConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/TavernAnswerQualifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/UserRaceInGenitiveCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/lose.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/outsideTavern.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/answer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/closeAfterAnswer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/lose.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/outsideTavern.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6fffd75e-6d89-4fe0-83e6-146565d6ab14" name="Changes" comment="new images on background">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/LocationConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/NpcPhrasesConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/QuestMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Weapon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CastleAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CaveAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/OutsideTavernAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/TavernAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/UnsupportedFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LogicServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/LocationToFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToLocationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToModeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/WeaponToRace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/castle.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/cave.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/castle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/cave.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/app/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/FunctionCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ButtonsAndFieldsNameConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/UserAnswersConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/UserAnswersConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ViewConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/controller/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Result.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/InitServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/TavernAnswerServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/FunctionCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/TavernAnswerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToRaceConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToRaceConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/TavernAnswerQualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/AnswerQualifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/UserRaceInGenitiveCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/UserRaceInGenitiveCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/view/View.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/tavern.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/tavern.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/lose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lose.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/outsideTavern.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/outsideTavern.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/outsideTavern.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/outsideTavern.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tavern.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tavern.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,10 +69,10 @@
       <list>
         <option value="Interface" />
         <option value="JavaScript File" />
-        <option value="Class" />
         <option value="Enum" />
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -75,28 +96,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/coding/JavaProjects/Quest/quest&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.build&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/user/Desktop/coding/JavaProjects/Quest/quest/src/main/webapp/static",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Global Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.build",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\coding\JavaProjects\Quest\quest\src\main\webapp\static" />
@@ -214,6 +235,9 @@
       <workItem from="1698848472602" duration="12015000" />
       <workItem from="1698878002631" duration="1983000" />
       <workItem from="1699004521874" duration="13981000" />
+      <workItem from="1699059088567" duration="510000" />
+      <workItem from="1699059607720" duration="5816000" />
+      <workItem from="1699128482638" duration="28499000" />
     </task>
     <task id="LOCAL-00001" summary="add start page and first view architecture">
       <option name="closed" value="true" />
@@ -231,7 +255,23 @@
       <option name="project" value="LOCAL" />
       <updated>1698753032423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add tavern scene - jsp, css, js and servlet&#10;made new utils&#10;add restart mode">
+      <option name="closed" value="true" />
+      <created>1699059357773</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699059357773</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new images on background">
+      <option name="closed" value="true" />
+      <created>1699059465082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699059465082</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,7 +280,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add start page and first view architecture" />
     <MESSAGE value="add login form, start working at tavern page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add login form, start working at tavern page" />
+    <MESSAGE value="add tavern scene - jsp, css, js and servlet&#10;made new utils&#10;add restart mode" />
+    <MESSAGE value="new images on background" />
+    <option name="LAST_COMMIT_MESSAGE" value="new images on background" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

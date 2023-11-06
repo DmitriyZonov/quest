@@ -1,5 +1,7 @@
 package com.javarush.quest.zonov.entity;
 
+import com.javarush.quest.zonov.repository.Race;
+
 public class User {
 
     private static volatile User user;

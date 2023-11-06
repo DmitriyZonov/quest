@@ -1,14 +1,14 @@
 package com.javarush.quest.zonov.util;
 
-import com.javarush.quest.zonov.entity.Race;
-import com.javarush.quest.zonov.entity.Race.*;
+import com.javarush.quest.zonov.repository.Race;
+import jakarta.servlet.http.HttpServletRequest;
 
-import static com.javarush.quest.zonov.entity.Race.*;
+import static com.javarush.quest.zonov.repository.Race.*;
 
 public class StringToRaceConverter {
     private String raceName;
-    public StringToRaceConverter(String raceName) {
-        this.raceName = raceName;
+    public StringToRaceConverter(HttpServletRequest request) {
+        this.raceName = request.getParameter("userRace");
     }
     public Race convert() {
         return switch (raceName) {
