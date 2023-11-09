@@ -1,6 +1,6 @@
 package com.javarush.quest.zonov.constants;
 
-public class RaceConstants {
+public class RaceConstantsRussian {
     public static final String ELF = "Эльф";
     public static final String WARRIOR = "Воин";
     public static final String DWARF = "Гном";

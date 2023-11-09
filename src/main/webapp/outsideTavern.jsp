@@ -4,8 +4,6 @@
 <%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
 <%@ page import="static com.javarush.quest.zonov.constants.NpcPhrasesConstants.*" %>
 <%@ page import="static com.javarush.quest.zonov.constants.UserAnswersConstants.*" %>
-<%@ page import="com.javarush.quest.zonov.repository.QuestMode" %>
-<%@ page import="com.javarush.quest.zonov.util.StringToModeConverter" %>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <head>
@@ -86,6 +84,7 @@
             <h2 class="lead"><b><b><%=BALDHEADED_MODE%></b></b></h2>
             <br>
         </div>
+        <br><br>
         <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;">
             <h2 class="lead"><b><b><%=I_CAN_FIND_SOME_PEOPLE%></b></b></h2>
         </div>

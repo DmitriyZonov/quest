@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@page import="com.javarush.quest.zonov.constants.UserAnswersConstants" %>
 <%@ page import="com.javarush.quest.zonov.repository.Race" %>
 <%@ page import="com.javarush.quest.zonov.util.UserRaceInGenitiveCase" %>
@@ -58,7 +58,7 @@
     <div id="answer">
         <h1><%=YOUR_ANSWER%></h1>
         <span class="close-btn">
-            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png">
         </span>
         <form action="logic" method="get">
             <input onclick="window.location='/logic?location=tavern&answer=0'" value="<%=NOT_YOUR_BUSINESS%>" style="cursor:pointer; text-align: center" />
@@ -126,4 +126,3 @@
 
 </div>
 </body>
-</html>

@@ -10,6 +10,12 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
+import static com.javarush.quest.zonov.constants.AttributesConstants.ANSWER;
+import static com.javarush.quest.zonov.constants.AttributesConstants.MODE;
+import static com.javarush.quest.zonov.constants.ExceptionConstants.ANSWER_ON_OUTSIDE_TAVERN_EXCEPTION;
+import static com.javarush.quest.zonov.constants.JSPConstants.CAVE;
+import static com.javarush.quest.zonov.constants.JSPConstants.OUTSIDE_TAVERN;
+
 public class OutsideTavernAction implements Function {
 
 
@@ -17,23 +23,24 @@ public class OutsideTavernAction implements Function {
     public void execute(HttpServletRequest request, HttpServletResponse response, HttpSession session, AnswerCode answerCode) throws ServletException, IOException {
         switch (answerCode) {
             case ZERO -> {
-                session.setAttribute("answer", UserAnswersConstants.SILENT_MODE);
-                request.getServletContext().getRequestDispatcher("/outsideTavern.jsp").forward(request, response);
+                session.setAttribute(ANSWER, UserAnswersConstants.SILENT_MODE);
+                request.getServletContext().getRequestDispatcher(OUTSIDE_TAVERN).forward(request, response);
             }
             case ONE -> {
-                session.setAttribute("answer", UserAnswersConstants.BALDHEADED_MODE);
-                request.getServletContext().getRequestDispatcher("/outsideTavern.jsp").forward(request, response);
+                session.setAttribute(ANSWER, UserAnswersConstants.BALDHEADED_MODE);
+                request.getServletContext().getRequestDispatcher(OUTSIDE_TAVERN).forward(request, response);
             }
             case TWO -> {
-                session.setAttribute("answer", null);
-                session.setAttribute("mode", QuestMode.SILENT_MODE);
-                request.getServletContext().getRequestDispatcher("/cave.jsp").forward(request, response);
+                session.setAttribute(ANSWER, null);
+                session.setAttribute(MODE, QuestMode.SILENT_MODE);
+                request.getServletContext().getRequestDispatcher(CAVE).forward(request, response);
             }
             case THREE -> {
-                session.setAttribute("answer", null);
-                session.setAttribute("mode", QuestMode.BALDHEAD_MODE);
-                request.getServletContext().getRequestDispatcher("/cave.jsp").forward(request, response);
+                session.setAttribute(ANSWER, null);
+                session.setAttribute(MODE, QuestMode.BALDHEAD_MODE);
+                request.getServletContext().getRequestDispatcher(CAVE).forward(request, response);
             }
+            case FOUR -> throw new IllegalArgumentException(ANSWER_ON_OUTSIDE_TAVERN_EXCEPTION);
         }
     }
 }

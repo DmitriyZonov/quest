@@ -32,8 +32,8 @@ img{
 }
 #goOut-button{
     cursor: pointer;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: 500px;
     left: 0;
     right: 0;
     bottom: 300px;

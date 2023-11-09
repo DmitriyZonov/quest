@@ -3,29 +3,25 @@ package com.javarush.quest.zonov.util;
 import com.javarush.quest.zonov.repository.Race;
 import com.javarush.quest.zonov.repository.Weapon;
 
+import static com.javarush.quest.zonov.constants.ExceptionConstants.RACE_NOT_NULL;
+import static java.util.Objects.isNull;
+
 public class WeaponToRace {
     private Race race;
 
     public WeaponToRace(Race race) {
-        this.race = race;
+        if(isNull(race)){
+            throw new IllegalArgumentException(RACE_NOT_NULL);
+        } else {
+            this.race = race;
+        }
     }
     public String correlate() {
-        switch(race) {
-            case DWARF -> {
-                return Weapon.AXE.getNameOfWeapon();
-            }
-            case ELF -> {
-                return Weapon.BOW.getNameOfWeapon();
-            }
-            case WIZARD -> {
-                return Weapon.STAFF.getNameOfWeapon();
-            }
-            case WARRIOR -> {
-                return Weapon.SWORD.getNameOfWeapon();
-            }
-            default -> {
-                return Weapon.STICK.getNameOfWeapon();
-            }
-        }
+        return switch(race) {
+            case DWARF -> Weapon.AXE.getNameOfWeapon();
+            case ELF -> Weapon.BOW.getNameOfWeapon();
+            case WIZARD -> Weapon.STAFF.getNameOfWeapon();
+            case WARRIOR -> Weapon.SWORD.getNameOfWeapon();
+        };
     }
 }

@@ -1,6 +1,10 @@
 package com.javarush.quest.zonov.entity;
 
 import com.javarush.quest.zonov.repository.Race;
+import com.javarush.quest.zonov.util.StringLegacyChecker;
+
+import static com.javarush.quest.zonov.constants.ExceptionConstants.RACE_NOT_NULL;
+import static java.util.Objects.isNull;
 
 public class User {
 
@@ -26,7 +30,9 @@ public class User {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (new StringLegacyChecker(name).check()) {
+            this.name = name;
+        }
     }
 
     public Race getRace() {
@@ -34,6 +40,9 @@ public class User {
     }
 
     public void setRace(Race race) {
+        if (isNull(race)) {
+            throw new IllegalArgumentException(RACE_NOT_NULL);
+        }
         this.race = race;
     }
 }

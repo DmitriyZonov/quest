@@ -1,8 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
 <%@ page import="static com.javarush.quest.zonov.constants.NpcPhrasesConstants.*" %>
-<%@ page import="com.javarush.quest.zonov.constants.RaceConstants" %>
+<%@ page import="com.javarush.quest.zonov.constants.RaceConstantsRussian" %>
 <!DOCTYPE html>
 <head>
 
@@ -39,22 +39,22 @@
     <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
         <h2 class="display-3" style="text-align: center; text-decoration-style: double;"><b><%=YOUR_NATIVE_LAND_IN_DANGER%></b></h2>
         <p class="lead"><b><b><%=LOGIN_INVITATION%></b></b></p>
-        <h3 href="#" id="login-button"><%=SET_YOUR_NAME%></h3>
+        <h3 href="#" id="login-button" style="font-size: 35px"><%=SET_YOUR_NAME%></h3>
     </div>
 
     <div id="container">
         <h1><%=TEXT_NAME%></h1>
         <span class="close-btn">
-            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+            <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png">
         </span>
         <form action="tavern" method="get">
             <input type="text" name="userName" placeholder="<%=YOUR_NAME_WARRIOR%>" />
             <select type="text" id="select" name="userRace">
                 <option disabled selected><%=SET_YOUR_RACE%></option>
-                <option value="elf"><%=RaceConstants.ELF%></option>
-                <option value="dwarf"><%=RaceConstants.DWARF%></option>
-                <option value="wizard"><%=RaceConstants.WIZARD%></option>
-                <option value="warrior"><%=RaceConstants.WARRIOR%></option>
+                <option value="elf"><%=RaceConstantsRussian.ELF%></option>
+                <option value="dwarf"><%=RaceConstantsRussian.DWARF%></option>
+                <option value="wizard"><%=RaceConstantsRussian.WIZARD%></option>
+                <option value="warrior"><%=RaceConstantsRussian.WARRIOR%></option>
             </select>
             <input type="submit" value="<%=SET_YOUR_NAME%>" style="cursor: pointer" />
         </form>
@@ -65,4 +65,3 @@
     <script src="static/login.js"></script>
 </div>
 </body>
-</html>

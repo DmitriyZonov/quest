@@ -6,7 +6,7 @@
 <%@ page import="com.javarush.quest.zonov.repository.QuestMode" %>
 <%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
 <%@ page import="static com.javarush.quest.zonov.constants.UserAnswersConstants.*" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <!DOCTYPE html>
 <head>
 
@@ -161,7 +161,7 @@
                 <h2 class="lead"><b><b><%=NONSENSE%></b></b></h2>
             </div>
             <br><br>
-            <input onclick="window.location='/logic?location=cave&mode=baldHead&answer=4';closeAfterAnswer()" style="font-size: 30px; text-align: center; cursor: pointer" value="<%=ATACK_CASTLE%>" />
+            <input onclick="window.location='/logic?location=cave&mode=baldHead&answer=4';closeAfterAnswer()" style="font-size: 30px; text-align: center; cursor: pointer" value="<%=ATTACK_CASTLE%>" />
         </c:if>
     </c:if>
 
@@ -176,4 +176,3 @@
     </script>
 </div>
 </body>
-</html>

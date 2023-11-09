@@ -1,8 +1,5 @@
 package com.javarush.quest.zonov.constants;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class UserAnswersConstants {
 
     /* tavern.jsp*/
@@ -37,5 +34,13 @@ public class UserAnswersConstants {
     public static final String  KILL_ONE_OF_GENERALS = "Убить одного из генералов";
     public static final String I_TIRED_AND_WANT_SILENT = "Пожалуй, ты прав, хватит на сегодня бессмысленных жертв. Сделаем все по-тихому. Ты идешь со мной, остальные должны " +
             "отвлечь все внимание стражи на себя, прямого противостояния избегаем, но город должен быть в огне, вся надежда на вас!";
-    public static final String NONSENSE = "Что за чепуха! Неужели ты хочешь отступить, когда победа так близка! Нам нужно действовать решительно, время полумер прошло!";
+    public static final String NONSENSE = "Что за чепуха! Неужели ты хочешь отступить, когда победа так близка! Нам нужно действовать решительно, время полумер прошло! Вперед, за мной!";
+
+    /* castle.jsp */
+    public static final String TO_THE_CANALISATION = "В канализацию";
+    public static final String TO_THE_WALL = "На стену";
+    public static final String WE_GO_ON_THE_WALL = "Пойдем на стену, с меткостью у меня никогда не было проблем";
+    public static final String WE_GO_IN_THE_CANALISATION = "На меткость полагаться нельзя, нужно действовать наверняка";
+    public static final String WE_GO_AHEAD = "Вариант один - идти вперёд, отбросив всякие сомнения!";
+    public static final String WE_MUST_EXPLODE_THE_WALL = "Нам необходимо взрывать стену!";
 }

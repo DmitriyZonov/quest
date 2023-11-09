@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ page import="com.javarush.quest.zonov.repository.Race" %>
 <%@ page import="static com.javarush.quest.zonov.constants.ButtonsAndFieldsNameConstants.*" %>
 <%@ page import="static com.javarush.quest.zonov.constants.NpcPhrasesConstants.*" %>
@@ -42,9 +42,14 @@
     %>
     <c:set var="FIRST_TAVERN_BAD_ANSWER" value="<%=NOT_YOUR_BUSINESS%>" />
     <c:set var="SECOND_TAVERN_BAD_ANSWER" value="<%=I_DONT_LIKE_YOU%>" />
-    <c:set var="HONEST_PLAN" value="<%=TELL_HONEST_PLAN%>"/>
-    <c:set var="KILL_WIZARD" value="<%=KILL_WIZARD%>"/>
-    <c:set var="SESSION_ANSWER" value="<%=sessionAnswer%>"/>
+    <c:set var="HONEST_PLAN" value="<%=TELL_HONEST_PLAN%>" />
+    <c:set var="KILL_WIZARD" value="<%=KILL_WIZARD%>" />
+    <c:set var="HIT_FROM_AFAR" value="<%=HIT_FROM_AFAR%>" />
+    <c:set var="KILL_FROM_THE_DOOR" value="<%=KILL_FROM_THE_DOOR%>" />
+    <c:set var="BLIND_KILL" value="<%=BLIND_KILL%>" />
+    <c:set var="HORSE_KILL" value="<%=KILL_ON_HORSE%>" />
+    <c:set var="SESSION_ANSWER" value="<%=sessionAnswer%>" />
+
     <c:if test="${SESSION_ANSWER == FIRST_TAVERN_BAD_ANSWER}">
 
     <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
@@ -70,11 +75,33 @@
             <h2 class="lead"><b><b><%=YOU_ARE_PARANOID%></b></b></h2>
         </div>
     </c:if>
+    <c:if test="${SESSION_ANSWER == HIT_FROM_AFAR}">
+        <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=SORRY + userRace%>!</b></b></h2>
+            <h2 class="lead"><b><b><%=YOU_ARE_MISSED%></b></b></h2>
+        </div>
+    </c:if>
+    <c:if test="${SESSION_ANSWER == KILL_FROM_THE_DOOR}">
+        <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=SORRY + userRace%>!</b></b></h2>
+            <h2 class="lead"><b><b><%=YOU_WAIT_TOO_MUCH_TIME%></b></b></h2>
+        </div>
+    </c:if>
+    <c:if test="${SESSION_ANSWER == BLIND_KILL}">
+        <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=SORRY + userRace%>!</b></b></h2>
+            <h2 class="lead"><b><b><%=YOU_ARE_MISSED%></b></b></h2>
+        </div>
+    </c:if>
+    <c:if test="${SESSION_ANSWER == HORSE_KILL}">
+        <div class="jumbotron" style="background-color: rgba(203, 212, 220, .50); border-radius: 5px; box-shadow: 1px 1px 50px #000;" >
+            <h2 class="lead" style="text-align: center; text-decoration-style: double;"><b><b><%=SORRY + userRace%>!</b></b></h2>
+            <h2 class="lead"><b><b><%=YOU_AIM_TOO_LONG%></b></b></h2>
+        </div>
+    </c:if>
     <br><br><br><br><br><br>
     <form action="restart" method="post">
         <input type="submit" style="font-size: 30px" id="answer-button" value="<%=RESTART%>" />
     </form>
 </div>
-
 </body>
-</html>

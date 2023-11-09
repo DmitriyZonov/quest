@@ -1,0 +1,70 @@
+body {
+    background: url('img/win_back.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: visible;
+}
+
+#answer-button{
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 300px;
+    padding: 15px;
+    margin: auto;
+    width: 300px;
+    height: 80px;
+    border-radius: 10%;
+    background: rgba(3,3,3,.9);
+    overflow: hidden;
+    opacity: 0.6;
+    box-shadow: 10px 10px 30px #000;
+}
+
+h1{
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    margin-top: 0px;
+    text-align: center;
+    font-size: 40px;
+    color: #ddd;
+    text-shadow: 3px 3px 10px #000;
+}
+
+/* Inputs */
+input{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin: 9px auto;
+    font-size: 40px;
+    color: #fff;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: rgba(3,3,3,.1);
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+input:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #333;
+    background: rgba(3,3,3,.7);
+}
+
+/* Placeholders */
+::-webkit-input-placeholder {
+    color: #ddd;  }
+:-moz-placeholder { /* Firefox 18- */
+    color: red;  }
+::-moz-placeholder {  /* Firefox 19+ */
+    color: red;  }
+:-ms-input-placeholder {
+    color: #333;  }

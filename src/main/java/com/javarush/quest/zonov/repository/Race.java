@@ -1,16 +1,19 @@
 package com.javarush.quest.zonov.repository;
 
-import com.javarush.quest.zonov.constants.RaceConstants;
+import com.javarush.quest.zonov.constants.RaceConstantsRussian;
+import com.javarush.quest.zonov.util.StringLegacyChecker;
+
 
 public enum Race {
-    ELF(RaceConstants.ELF), DWARF(RaceConstants.DWARF), WIZARD(RaceConstants.WIZARD), WARRIOR(RaceConstants.WARRIOR);
+    ELF(RaceConstantsRussian.ELF), DWARF(RaceConstantsRussian.DWARF), WIZARD(RaceConstantsRussian.WIZARD), WARRIOR(RaceConstantsRussian.WARRIOR);
 
-    private final String race;
+    private String race;
 
     Race(String race){
-        this.race = race;
+        if (new StringLegacyChecker(race).check()) {
+            this.race = race;
+        }
     }
-
     public String getNameOfRace() {
         return race;
     }

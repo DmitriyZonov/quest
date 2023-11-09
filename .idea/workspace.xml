@@ -9,54 +9,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6fffd75e-6d89-4fe0-83e6-146565d6ab14" name="Changes" comment="new images on background">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/LocationConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/NpcPhrasesConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/QuestMode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Weapon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CastleAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CaveAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/OutsideTavernAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/TavernAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/UnsupportedFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LogicServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/LocationToFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToLocationConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToModeConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/WeaponToRace.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/castle.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/cave.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/castle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/cave.css" afterDir="false" />
+    <list default="true" id="6fffd75e-6d89-4fe0-83e6-146565d6ab14" name="Changes" comment="make new Architecture, add cave.jsp and castle.jsp">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/AttributesConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/JSPConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ModeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ProbabilityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceConstantsEnglish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceInGenitiveCaseConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/WeaponConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/WinCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/HitProbabilityMonitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringLegacyChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/WinQualifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/win.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/win.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/entityTests/RaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/entityTests/UserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/entityTests/WeaponTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/AnswerQualifierTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/HitProbabilityMonitorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/LocationToFunctionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/StringLegacyCheckerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/StringToLocationConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/StringToModeConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/StringToRaceConverterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/UserRaceInGenitiveCaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/WeaponToRaceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/javarush/quest/zonov/utilTests/WinQualifierTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/webContexts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/app/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/FunctionCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ButtonsAndFieldsNameConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ButtonsAndFieldsNameConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ButtonsAndFieldsNameConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ExceptionConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ExceptionConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/NpcPhrasesConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/NpcPhrasesConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/RaceConstantsRussian.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/UserAnswersConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/UserAnswersConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/constants/ViewConstants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/controller/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Answer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Race.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/Result.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/FunctionCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/exception/ApplicationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/AnswerCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/AnswerCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Race.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Race.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Weapon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/repository/Weapon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CastleAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CastleAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CaveAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/CaveAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/OutsideTavernAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/OutsideTavernAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/TavernAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/TavernAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/services/UnsupportedFunction.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/TavernAnswerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/RestartServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/servlets/RestartServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/AnswerQualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/AnswerQualifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/LocationToFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/LocationToFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToLocationConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToLocationConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToModeConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToModeConverter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToRaceConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/StringToRaceConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/TavernAnswerQualifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/AnswerQualifier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/UserRaceInGenitiveCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/UserRaceInGenitiveCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/view/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/WeaponToRace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/javarush/quest/zonov/util/WeaponToRace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/castle.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/castle.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cave.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cave.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/lose.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lose.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/outsideTavern.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/outsideTavern.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/outsideTavern.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/outsideTavern.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/castle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/castle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/closeAfterAnswer.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/tavern.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tavern.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,9 +85,9 @@
         <option value="Interface" />
         <option value="JavaScript File" />
         <option value="Enum" />
+        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Class" />
-        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -85,6 +100,9 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -104,7 +122,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/user/Desktop/coding/JavaProjects/Quest/quest/src/main/webapp/static",
+    "last_opened_file_path": "C:/Users/user/Desktop/coding/JavaProjects/Island",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -128,11 +146,94 @@
       <recent name="C:\Users\user\Desktop\coding\JavaProjects\Quest\quest\src\main\webapp\static\img" />
       <recent name="C:\Users\user\Desktop\coding\JavaProjects\Quest\quest\src\main\webapp\static" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.javarush.quest.zonov.servlets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat ">
+    <configuration name="RaceTest.creationOfRace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.zonov.entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.zonov.entityTests" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.zonov.entityTests.RaceTest" />
+      <option name="METHOD_NAME" value="creationOfRace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringLegacyCheckerTest.whenParameterIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.zonov.utilTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.zonov.utilTests" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.zonov.utilTests.StringLegacyCheckerTest" />
+      <option name="METHOD_NAME" value="whenParameterIsNull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.getRace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.zonov.entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.zonov.entityTests" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.zonov.entityTests.UserTest" />
+      <option name="METHOD_NAME" value="getRace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTest.getRaceVerifyGetNameOfRace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.zonov.entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.zonov.entityTests" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.zonov.entityTests.UserTest" />
+      <option name="METHOD_NAME" value="getRaceVerifyGetNameOfRace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeaponTest.creationOfRace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="quest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.javarush.quest.zonov.entityTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.javarush.quest.zonov.entityTests" />
+      <option name="MAIN_CLASS_NAME" value="com.javarush.quest.zonov.entityTests.WeaponTest" />
+      <option name="METHOD_NAME" value="creationOfRace" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat " type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat " ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -220,6 +321,15 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringLegacyCheckerTest.whenParameterIsNull" />
+        <item itemvalue="JUnit.WeaponTest.creationOfRace" />
+        <item itemvalue="JUnit.RaceTest.creationOfRace" />
+        <item itemvalue="JUnit.UserTest.getRaceVerifyGetNameOfRace" />
+        <item itemvalue="JUnit.UserTest.getRace" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -237,7 +347,7 @@
       <workItem from="1699004521874" duration="13981000" />
       <workItem from="1699059088567" duration="510000" />
       <workItem from="1699059607720" duration="5816000" />
-      <workItem from="1699128482638" duration="28499000" />
+      <workItem from="1699128482638" duration="77914000" />
     </task>
     <task id="LOCAL-00001" summary="add start page and first view architecture">
       <option name="closed" value="true" />
@@ -271,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699059465082</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="make new Architecture, add cave.jsp and castle.jsp">
+      <option name="closed" value="true" />
+      <created>1699313559855</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699313559855</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +400,8 @@
     <MESSAGE value="add login form, start working at tavern page" />
     <MESSAGE value="add tavern scene - jsp, css, js and servlet&#10;made new utils&#10;add restart mode" />
     <MESSAGE value="new images on background" />
-    <option name="LAST_COMMIT_MESSAGE" value="new images on background" />
+    <MESSAGE value="make new Architecture, add cave.jsp and castle.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="make new Architecture, add cave.jsp and castle.jsp" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
